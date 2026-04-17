@@ -1,0 +1,57 @@
+/* Body center */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Section container */
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 200px;
+}
+
+/* App */
+#app {
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 30px; 
+  
+}
+
+/* Paragraph */
+p {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 19px; 
+  text-align: justify;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  background-color: rgb(41, 159, 48);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Button hover */
+button:hover {
+  background-color: #efca10;
+}
