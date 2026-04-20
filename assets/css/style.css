@@ -1,57 +1,69 @@
-/* Body center */
 body {
-  font-family: 'Times New Roman', Times, serif;
-  background-color: whitesmoke;
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+}
+
+.header{
+ padding: 5px;
+ font-size: 28px;
+ text-align: center;
+ color: rgb(38, 38, 153);
+}
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+   font-size: 14px;
+}
+
+.card {
+  flex: 1 1 calc(33.33% - 20px);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
-/* Section container */
-.container {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin: 200px;
-}
-
-/* App */
-#app {
+.modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
   text-align: center;
 }
 
-/* Heading */
-h1 {
-  color: #2c3e50;
-  margin-bottom: 10px;
-  font-size: 30px; 
-  
-}
-
-/* Paragraph */
-p {
-  color: #555;
-  margin-bottom: 20px;
-  font-size: 19px; 
-  text-align: justify;
-}
-
-/* Button */
-button {
-  padding: 10px 20px;
-  background-color: rgb(41, 159, 48);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 15px;
-  margin: 0;
-}
-
-/* Button hover */
-button:hover {
-  background-color: #efca10;
+.close-btn {
+  margin-top: 15px;
 }
