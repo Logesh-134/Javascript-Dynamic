@@ -108,7 +108,7 @@ function createSection() {
 const { header, section } = createSection();
 
 app.appendChild(header);
-app.appendChild(section);
+app.appendChild(section);           
 
 
 
